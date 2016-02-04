@@ -3,7 +3,7 @@ package ro.mindit.demo;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.*;
 
 
 /**
@@ -13,6 +13,10 @@ public class TestIntro {
 
     @Test
     public void newTest() {
-        assertThat("always true", 1==1, is(true));
+        assertFalse(1==2);
+        //assertNotNull("company id should not be null", null);
+        assertThat(1 == 1, is(true));
     }
+
+
 }

@@ -1,6 +1,7 @@
 package ro.mindit.demo.service;
 
 import ro.mindit.demo.domain.Employee;
+import ro.mindit.demo.domain.TestAccountException;
 
 /**
  * Created by Alex on 04.02.2016.
@@ -8,8 +9,8 @@ import ro.mindit.demo.domain.Employee;
 public interface EmployeeService {
 
 
-    void receivePaycheck(Employee employee, int amount);
+    void receivePaycheck(Employee employee, int amount) throws TestAccountException;
 
-    void shop(Employee employee, int amount);
+    void shop(Employee employee, int amount) throws TestAccountException;
 
 }

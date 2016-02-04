@@ -16,6 +16,15 @@ public class Employee {
     }
 
 
+
+    public String getName() {
+        return name;
+    }
+
+    public boolean isRich() {
+        return true;
+    }
+
     public boolean isInDebt() {
         if(account.getBalance() < 0) {
             return true;
@@ -27,9 +36,13 @@ public class Employee {
         this.account = account;
     }
 
-    public int getAccountNo() {
+    public int getAccountNo() throws TestAccountException{
+
+        if(account == null) throw new TestAccountException("no account!");
         return account.getAccountNo();
     }
+
+
 
 
 }
