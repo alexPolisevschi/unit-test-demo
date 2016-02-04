@@ -27,5 +27,9 @@ public class Employee {
         this.account = account;
     }
 
+    public int getAccountNo() {
+        return account.getAccountNo();
+    }
+
 
 }

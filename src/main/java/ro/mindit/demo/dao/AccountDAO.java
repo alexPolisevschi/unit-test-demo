@@ -8,4 +8,6 @@ public interface AccountDAO {
     void deposit(int amount, int accountNo);
 
     void withdraw(int amount, int accountNo);
+
+    int getBalance(int accountNo);
 }
